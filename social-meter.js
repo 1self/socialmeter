@@ -36,7 +36,7 @@ if (Meteor.isClient) {
                 "source": config.appName,
                 "version": config.appVersion,
                 "objectTags": ["people"],
-                "actionTags": ["mood", "interact", "met"],
+                "actionTags": ["interact", "met"],
                 "properties": {
                     "personName": personNameInput.val(),
                     "mood": parseInt(moodInput.val())
