@@ -65,7 +65,7 @@ if (Meteor.isClient) {
         'click #moodStats': function () {
             var url = lib1self.visualize(window.localStorage.streamId, window.localStorage.readToken)
                 .objectTags(["people"])
-                .actionTags(["mood"])
+                .actionTags(["interact", "met"])
                 .sum("mood")
                 .barChart()
                 .backgroundColor("84c341")
